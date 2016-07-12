@@ -5,11 +5,6 @@ dist
 /coverage
 /.nyc_output
 
-# Elastic Beanstalk Files
-/parse-server/.elasticbeanstalk/*
-/parse-server/!.elasticbeanstalk/*.cfg.yml
-/parse-server/!.elasticbeanstalk/*.global.yml
-
 # OSX
 #
 .DS_Store

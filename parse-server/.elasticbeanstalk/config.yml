@@ -1,0 +1,10 @@
+branch-defaults:
+  default:
+    environment: parse-server- //TODO: add enviroment name (i.e. aries or arierQA)
+global:
+  application_name: parse-server- //TODO: add app name (i.e. aries)
+  default_ec2_keyname: mongodb-ec2- //TODO: add app name (i.e. ez-aries)
+  default_platform: Node.js
+  default_region: us-east-1
+  profile: eb-cli
+  sc: null
