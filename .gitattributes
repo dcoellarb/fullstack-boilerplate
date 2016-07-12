@@ -1,0 +1,2 @@
+/parse-server/.elasticbeanstalk/config.yml merge=ours
+/parse-server/.ebextensions/app.config merge=ours

@@ -1,0 +1,10 @@
+{
+  "databaseURI":, //TODO: get databse URI (i.e. "mongodb://aries:aries123@ip-172-31-12-3.ec2.internal:27017/aries?ssl=false")
+  "cloud": "/cloud/main.js",
+  "appId":, //TODO: generate appId (i.e. "b718aa5fb5f449d0bc3665c29278559c")
+  "masterKey":, //TODO: generate masterKey (i.e. "c249e64075a2487e89a2f08a45fc0e8d")
+  "fileKey":, //TODO: generate fileKey (i.e. "2b38640e1cb7400e944a4f08dd7dd3e3")
+  "parseAPIPrefix": "/parse",
+  "port": 8081,
+  "serverURL": //TODO: add server URL (i.e. "http://parse-server-aries-dev.us-east-1.elasticbeanstalk.com")
+}
