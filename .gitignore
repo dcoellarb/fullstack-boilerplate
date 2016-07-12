@@ -2,8 +2,9 @@ node_modules
 npm-debug.log
 .DS_Store
 dist
-/coverage
-/.nyc_output
+coverage
+.nyc_output
+logs
 
 # OSX
 #

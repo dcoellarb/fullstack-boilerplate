@@ -58,7 +58,7 @@
     "nyc": "^6.4.4"
   },
   "dependencies": {
-    "data-modeler": "^1.0.0",
+    "data-modeler": "^1.0.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "material-ui": "^0.15.0",
     "node-file-loader": "^0.1.0",
