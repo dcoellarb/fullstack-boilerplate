@@ -1,10 +1,10 @@
 {
-  "databaseURI": "mongodb://aries:aries123@ip-172-31-12-3.ec2.internal:27017/aries?ssl=false",
+  "databaseURI": "mongodb://local:local@localhost:27017/boilerplate?ssl=false",
   "cloud": "./build/cloud.js",
-  "appId": "b718aa5fb5f449d0bc3665c29278559c",
-  "masterKey": "c249e64075a2487e89a2f08a45fc0e8d",
-  "fileKey": "2b38640e1cb7400e944a4f08dd7dd3e3",
+  "appId": "2B3E97833FA04784BAB2CBCA82F719BE",
+  "masterKey": "5663503DB6FA459185F245C00045C31E",
+  "fileKey": "E65970B1FD7941F98BDCDB353A8A0D69",
   "parseAPIPrefix": "/parse",
   "port": 8081,
-  "serverURL": "http://parse-server-aries-dev.us-east-1.elasticbeanstalk.com"
+  "serverURL": "localhost"
 }

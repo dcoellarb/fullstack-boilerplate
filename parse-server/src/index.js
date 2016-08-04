@@ -27,4 +27,5 @@ app.get('/', (req, res) => {
 const port = nconf.get('port');
 app.listen(port, () => {
   console.log('parse-server running', port);
+  console.log('test comment');
 });

@@ -1,9 +1,12 @@
 import { combineReducers } from 'redux';
-/* ADD your reducers import here*/
+import localizationReducer from './localizationReducer';
+import windowReducer from './windowReducer';
+import usersReducer from './usersReducer';
 
 const reducers = combineReducers({
-	/* Add your reducers here */
-
+  localization: localizationReducer,
+  windowSize: windowReducer,
+  users: usersReducer,
 });
 
 export default reducers;
