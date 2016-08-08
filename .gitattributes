@@ -1,3 +1,3 @@
-/parse-server/.elasticbeanstalk/config.yml merge=ours
-/parse-server/.ebextensions/app.config merge=ours
-/parse-server/config/default.json merge=ours
+./.elasticbeanstalk/config.yml merge=ours
+./.ebextensions/app.config merge=ours
+./server/config/default.json merge=ours

@@ -1,9 +1,0 @@
-node_modules
-cloud
-logs
-src
-test
-config
-.babelrc
-.eslintrc
-.jshintrc

@@ -67,11 +67,11 @@ Test local!!!
 ### Running
 
 ```
+mongod --dbpath /Users/dcoellar/mongodb/data/db
 cd /usr/local/lib/node_modules/parse-dashboard
 parse-dashboard --config parse-dashboard-config.json
 
 cd parse-server
-npm install
 npm run watch
 npm run nodemon
 npm run watch:test
@@ -81,7 +81,6 @@ cd react-native
 
 cd ..
 cd react-web
-npm install
 npm start
 npm run watch:test
 ```
