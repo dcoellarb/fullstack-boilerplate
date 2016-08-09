@@ -1,0 +1,33 @@
+{
+  "name": "fullstack-boilerplate",
+  "version": "1.0.0",
+  "description": "Boiler plate for fullstack apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "watch:test": "npm t -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcoellarb/fullstack-boilerplate.git"
+  },
+  "author": "Daniel Coellar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcoellarb/fullstack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dcoellarb/fullstack-boilerplate#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-register": "^6.11.6",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "nyc": "^7.1.0",
+    "parse-mockdb": "^0.1.17"
+  },
+  "dependencies": {
+    "parse": "^1.9.1",
+    "parse-env-chooser": "1.0.0",
+    "rx": "^4.1.0"
+  }
+}

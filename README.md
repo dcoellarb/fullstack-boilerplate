@@ -31,8 +31,23 @@ git clone https://github.com/dcoellarb/fullstack-boilerplate.git
 	4. Update ./.elasticabeanstalk/config.yml with QA IDs
 4. React Native setup
 5. React Web setup
+6. Install npm packages
+```
+npm install
 
-Test local!!!
+cd parse-server
+npm install
+
+cd ..
+cd react-native
+npm install
+
+cd ..
+cd react-web
+npm install
+```
+
+Test local (Go to Running section to get started)!!!
 
 6. AWS setup
 	1. Code commit setup
@@ -67,21 +82,24 @@ Test local!!!
 ### Running
 
 ```
+mongod --dbpath /Users/dcoellar/mongodb/data/db
+
 cd /usr/local/lib/node_modules/parse-dashboard
 parse-dashboard --config parse-dashboard-config.json
 
+cd <path to project>
+npm run watch:test
+
 cd parse-server
-npm install
 npm run watch
 npm run nodemon
-npm run watch:test
+npm run watch:testcd
 
 cd ..
 cd react-native
 
 cd ..
 cd react-web
-npm install
 npm start
 npm run watch:test
 ```

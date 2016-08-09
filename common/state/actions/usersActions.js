@@ -13,13 +13,12 @@ export const fetchUsers = () => (dispatch) => {
   // TODO check if already fetching data
   // i.e. return false;
   
-  const suscription = api.fetchUsers().subscribe(
+  api.fetchUsers().subscribe(
     (users) => dispatch(getUsers(users)),
     (error) => console.dir(error),
     () => {}
   );
 
   // TODO what to do with the suscription, dispath it to store?
-  return;
 }
 

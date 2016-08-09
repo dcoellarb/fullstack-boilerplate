@@ -1,4 +1,4 @@
-import Parse from 'parse';
+import Parse from 'parse-env-chooser';
 import Rx from 'rx';
 
 export const fetchUsers = () => {
