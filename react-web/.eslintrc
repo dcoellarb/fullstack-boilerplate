@@ -3,8 +3,7 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jquery": true,
-    "node": trues
+    "jquery": true
   },
   "extends": "airbnb",
   "parserOptions": {

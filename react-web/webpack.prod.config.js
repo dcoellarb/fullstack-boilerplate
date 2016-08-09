@@ -14,12 +14,12 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['react-hot', 'babel'],
-      include: path.join(__dirname, './../app')
+      include: path.join(__dirname, 'src')
     },
     {
       test: /\.jsx$/,
       loaders: ['react-hot', 'babel'],
-      include: path.join(__dirname, './../app')
+      include: path.join(__dirname, 'src')
     },
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
@@ -27,15 +27,12 @@ module.exports = {
         'file?hash=sha512&digest=hex&name=[hash].[ext]',
         'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
       ],
-      include: path.join(__dirname, './../app/common/assets/images')
+      include: path.join(__dirname, 'src')
     },
     {
       test: /\.css$/,
       loader: 'style-loader!css-loader',
-      include: [
-        path.join(__dirname, 'node_modules/responsive-css'),
-        path.join(__dirname, './../app/common/assets/css/app')
-      ]
+      include: path.join(__dirname, 'src')
     },
     {
       test: [/\.js$/, /\.jsx$/],
