@@ -114,3 +114,4 @@ npm run watch:test
 #### First time Production
 
 1. Create PROD branch
+2. webpack -p --config ./webpack.prod.config.js
