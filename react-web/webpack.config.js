@@ -45,7 +45,7 @@ module.exports = {
         loader: 'style-loader!css-loader',
         include: [
           path.join(__dirname, 'node_modules/responsive-css'),
-          path.join(__dirname, 'assets/css/responsive-css')
+          path.join(__dirname, 'assets/css')
         ]
       }
     ]

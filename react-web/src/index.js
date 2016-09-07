@@ -1,4 +1,5 @@
 require('./../node_modules/responsive-css/app.css');
+require('./../assets//css/app.css');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
