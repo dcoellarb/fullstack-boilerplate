@@ -13,13 +13,13 @@ export const getRoutes = (store) => {
   };
 
   return (
-	  <Router history={browserHistory}>
-	    {/* Other top level components */}
-	    {/* i.e. <Route path="login" component={LoginContainer} /> */}
+    <Router history={browserHistory}>
+      {/* Other top level components */}
+      {/* i.e. <Route path="login" component={LoginContainer} /> */}
       <Route component={MasterLayoutContainer} onEnter={requireAuth}>
         <Route path="/" component={App} />
       </Route>
       <Route path="login" component={LoginContainer} />
-    </Route>
+    </Router>
   );
 };

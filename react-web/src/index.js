@@ -9,7 +9,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import config from './../../common/config/config';
 import muiTheme from './styles/muiTheme';
 import configureStore from './../../common/state/store';
-import Router from './router';
+import { getRoutes } from './router';
+import { loadState, saveState } from './persistance/localStorage';
 const injectTapEventPlugin = require('react-tap-event-plugin');
 
 injectTapEventPlugin();
@@ -18,8 +19,20 @@ injectTapEventPlugin();
 Parse.initialize(config.parse.appID);
 Parse.serverURL = config.parse.serverURL;
 
+const persistedState = loadState();
+const store = configureStore(persistedState);
+store.subscribe(() => {
+  saveState({
+    context: {
+      currentUser: store.getState().context.currentUser
+    }
+  });
+});
+
 ReactDOM.render(
   <MuiThemeProvider muiTheme={muiTheme}>
-    <Provider store={configureStore()}>{Router}</Provider>
+    <Provider store={store}>
+      {getRoutes(store)}
+    </Provider>
   </MuiThemeProvider>, document.getElementById('root')
 );

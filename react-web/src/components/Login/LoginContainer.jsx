@@ -3,8 +3,8 @@ import actions from './../../../../common/state/actions/actions';
 import LoginPresenter from './LoginPresenter.jsx';
 
 const mapStateToProps = (state) => ({
-  email: state.login.email,
-  password: state.login.password
+  email: state.context.email,
+  password: state.context.password
 });
 
 const LoginContainer = connect(

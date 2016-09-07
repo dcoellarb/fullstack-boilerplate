@@ -1,14 +1,13 @@
 import { connect } from 'react-redux';
 import MasterLayoutPresentational from './MasterLayoutPresentational.jsx';
-import { windowResize } from './../../../../common/state/actions/windowActions';
-import { fetchUsers } from './../../../../common/state/actions/usersActions';
+import actions from './../../../../common/state/actions/actions';
 
 const mapDispatchToProps = (dispatch) => ({
-  onTestObservable: () => {
-    dispatch(fetchUsers());
-  },
   onResize: () => {
-    dispatch(windowResize());
+    dispatch(actions.windowResize());
+  },
+  onLogOut: () => {
+    dispatch(actions.context.logout());
   }
 });
 
