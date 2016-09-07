@@ -1,6 +1,6 @@
 export default {
 	parse : {
-		appID: '2B3E97833FA04784BAB2CBCA82F719BE',
-		serverURL: 'http://localhost:8081/parse'
+		appID: 'wJjWR5KTriUoPNnDH3baAQMkWvpAhuFhNU7PsKOP',
+		serverURL: 'http://parseserver.spayurztpa.us-east-1.elasticbeanstalk.com/parse'
 	}
 }

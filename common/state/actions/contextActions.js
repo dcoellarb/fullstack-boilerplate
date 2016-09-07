@@ -1,5 +1,5 @@
 import { browserHistory } from 'react-router'
-import * as api from './../../../api/login'
+import * as api from './../../api/login'
 import {
 	SET_LOGIN_CONTEXT,
 	SET_LOGOUT_CONTEXT,
@@ -46,7 +46,7 @@ export const login = (email, password) => (dispatch) => {
 };
 
 export const logout = () => (dispatch) => {
-  apiLogin.logout()
+  api.logout()
     .subscribe(
       () => {
         browserHistory.push('/login');

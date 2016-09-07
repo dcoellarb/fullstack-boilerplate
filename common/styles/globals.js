@@ -1,7 +1,10 @@
 export const globalColors = {
-  primary1Color: '#3FAE49',
+  primary1Color: '#607D8B',
   primary2Color: '#26353D',
-  backgroundColor: '#EFEFF2'
+  alertColor: '#F44336',
+  accent1Color: '#FFC107',
+  alternateTextColor: '#FFFFFF',
+  backgroundColor: '#EFEFF2',
 };
 
 export const globalFonts = {

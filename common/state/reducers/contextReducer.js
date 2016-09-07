@@ -3,7 +3,7 @@ import {
   SET_LOGOUT_CONTEXT,
   LOGIN_EMAIL_CHANGED,
   LOGIN_PASSWORD_CHANGED
-} from './../../actions/actionsTypes';
+} from './../actions/actionsTypes';
 
 export default (
   state = {
@@ -15,14 +15,14 @@ export default (
 ) => {
   switch (action.type) {
     case SET_LOGIN_CONTEXT: {
-      id: action.user ? action.user.id : undefined;
+      const id = action.user ? action.user.id : undefined;
 
-      role: action.role ? {
+      const role = action.role ? {
         id: action.role.id,
         name: action.role.get("name")
       } : undefined;
 
-      object: action.object ? {
+      const object = action.object ? {
         entity: role ? role.get("name") : undefined,
         id: action.object.id,
         nombre: action.object.get('nombre')
