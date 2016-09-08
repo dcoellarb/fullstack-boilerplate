@@ -6,8 +6,6 @@ A boilerplate to start parse - react - native projects
 ### Usage
 
 ```
-git clone https://github.com/dcoellarb/fullstack-boilerplate.git
-
 1. Download
 	1. git clone https://github.com/dcoellarb/fullstack-boilerplate.git
 	2. remove .git folder
@@ -49,7 +47,7 @@ npm install
 
 Test local (Go to Running section to get started)!!!
 
-6. AWS setup
+7. AWS setup
 	1. Code commit setup
 		1. Parse Server repository setup
 		2. React Native repository setup
@@ -58,50 +56,39 @@ Test local (Go to Running section to get started)!!!
 		1. Mongodb server setup
 		2. Parse Server beanstalk servers setup
 	3. React web S3 setup
-7. Commit
-	1. Commit Parse Server
-		1. cd parse-server
-		2. git init
+8. Commit
+	1. Commit Project
+		1. git init
 		3. git add .
 		4. git add remote <url code commmit>
 		5. git push
-	2. Commit React Native
-		1. cd parse-server
-		2. git init
-		3. git add .
-		4. git add remote <url code commmit>
-		5. git push
-	3. Commit React Web
-		1. cd parse-server
-		2. git init
-		3. git add .
-		4. git add remote <url code commmit>
-		5. git push
-```
 
+```
 ### Running
 
 ```
-mongod --dbpath /Users/dcoellar/mongodb/data/db
-
-cd /usr/local/lib/node_modules/parse-dashboard
-parse-dashboard --config parse-dashboard-config.json
-
-cd <path to project>
-npm run watch:test
-
-cd parse-server
-npm run watch
-npm run nodemon
-npm run watch:testcd
-
-cd ..
-cd react-native
-
-cd ..
-cd react-web
-npm start
-npm run watch:test
+1. Start Mongo DB
+	1. mongod --dbpath /Users/dcoellar/mongodb/data/db
+2. Start Parse dashboard
+	1. cd /usr/local/lib/node_modules/parse-dashboard
+	2. parse-dashboard --config parse-dashboard-config.json
+3. Start projects
+	1. Common code tests
+		1. cd <path to project>
+		2. npm run watch:test
+	2. Parse servr
+		1. cd parse-server
+		2. npm run watch
+		3. npm run nodemon
+		4. npm run watch:testcd
+	3. React Native
+		1. cd ..
+		2. cd react-native
+	4. React Web
+		1. cd ..
+		2. cd react-web
+		3. npm start
+		4. npm run watch:test
 ```
 
 ### Deployment
